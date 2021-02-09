@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using PROJECTONE.ModelLayer.Data.Interfaces;
-using PROJECTONE.ModelLayer.ViewModels;
+using StoreApp.ModelLayer.Data.Interfaces;
+using StoreApp.ModelLayer.ViewModels;
 
-namespace PROJECTONE.Controllers
+namespace StoreApp.Controllers
 {
     //Item Controller sends view of our list of products to the page
     public class ItemController : Controller

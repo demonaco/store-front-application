@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using PROJECTONE.ModelLayer.Data.Models;
 using StoreApp.ModelLayer.Data.Models;
 
 namespace RepositoryLayer

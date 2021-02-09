@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RepositoryLayer;
-using StoreApp.Data;
 
 namespace StoreApp.ModelLayer.Data.Models
 {

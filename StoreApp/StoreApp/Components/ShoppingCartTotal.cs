@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using PROJECTONE.ModelLayer.Data.Models;
-using PROJECTONE.ModelLayer.ViewModels;
+using StoreApp.ModelLayer.Data.Models;
+using StoreApp.ModelLayer.ViewModels;
 
-namespace PROJECTONE.Componets
+namespace StoreApp.Componets
 {
     public class ShoppingCartTotal : ViewComponent
     {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using StoreApp.ModelLayer.Data.Interfaces;
 using StoreApp.ModelLayer.Data.Models;
 using RepositoryLayer;
-using PROJECTONE.ModelLayer.Data.Models;
 
 namespace StoreApp.RepositoryLayer
 {

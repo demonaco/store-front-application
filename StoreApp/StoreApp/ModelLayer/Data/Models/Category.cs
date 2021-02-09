@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace PROJECTONE.ModelLayer.Data.Models
+namespace StoreApp.ModelLayer.Data.Models
 {
     public class Category
     {

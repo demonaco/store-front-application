@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using RepositoryLayer;
 using System.Linq;
 using System;
-using StoreApp.Data;
 
 namespace StoreApp.ModelLayer.Data.Models
 {
