@@ -1,0 +1,13 @@
+﻿@model PROJECTONE.ModelLayer.ViewModels.ShoppingCartViewModel
+
+@if (Model.ShoppingCart.ShoppingCartItem.Count > 0)
+{
+    <div>
+        <a asp-controller="ShoppingCart">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span id="cart-status">
+                @Model.ShoppingCart.ShoppingCartItem.Count
+            </span>
+        </a>
+    </div>
+}

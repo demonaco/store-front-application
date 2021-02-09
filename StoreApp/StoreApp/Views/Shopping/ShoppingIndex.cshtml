@@ -1,0 +1,14 @@
+﻿@*@model  @model PROJECTONE.ModelLayer.ViewModels.ShoppingViewModel
+
+    @await Html.PartialAsync("Carousel")
+
+    <h2>Prefered Shoes of the week</h2>
+    <h2>Shoppers love these shoes!!</h2>
+
+
+    <div class="row">
+        @foreach (var item in Model.IsFavShoe)
+        {
+            @Html.Partial("ItemSummary", item);
+        }
+    </div>*@

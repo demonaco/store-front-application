@@ -1,0 +1,51 @@
+﻿@model StoreApp.ModelLayer.ViewModels.ShoppingCartViewModel
+
+<h2>Your Shopping cart contains the following items:</h2>
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+
+        <tr>
+            <th scope="col">Item Name</th>
+            <th scope="col">Item Description</th>
+            <th scope="col">Item Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var li in Model.ShoppingCart.ShoppingCartItem)
+        {
+            <tr>
+                <th scope="row"></th>
+                <td>@li.Item.ItemType</td>
+                <td>@li.Item.Description</td>
+                <td>@li.Item.Price.ToString("c")</td>
+                <td><a class="btn btn-danger" asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-itemId="@li.Item.Id">Remove Item</a></td>
+
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                Total Price:
+            </td>
+            <td>
+                @Model.ShoppingCartTotal.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<div>
+    <a asp-controller="Order" asp-action="CheckoutItems" class="btn btn-info">Checkout</a>
+
+</div>
+
+
+
+
+
+
+

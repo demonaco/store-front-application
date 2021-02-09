@@ -1,0 +1,13 @@
+﻿<div>
+    <h1>Our shoe selection:</h1>
+</div>
+
+@*<h1>@Model.CurrentCategory</h1>*@
+
+@{
+    foreach (Item item in Model.Items)
+    {
+        @Html.Partial("ItemSummary", item)
+
+    }
+}
